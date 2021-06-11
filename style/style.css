@@ -91,7 +91,7 @@
 .author_location {
   height: 15px;
   padding-top: 39px;
-  margin-left: -35px;
+  margin-left: -34px;
   font-size: 12px;
   line-height: 15px;
 }
@@ -119,21 +119,94 @@
   margin-left: 17px;
 }
 
+#spacer {
+  width: 0px;
+  height: 40px;
+}
+
 .username_one, .username_two, .username_three, .username_four, .username_five {
   font-size: 14px;
   font-weight: bold;
   line-height: 18px;
   height: 14px;
+  margin-right: 4px;
 }
 
-.first_comment_container, .second_comment_container, .third_comment_container, .fourth_comment_container, .fifth_comment_container {
+ .first_comment_container, .comment_container {
   width: 253px;
   height: auto;
-  display: flex;
   margin-left: 18px;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
 
 .first_comment_container {
   margin-top: 16px;
+}
+
+.comment {
+  font-weight: normal;
+}
+
+.user_comment {
+  display: flex;
+  justify-content: center;
+}
+
+.hour {
+  margin-top: 16px;
+}
+
+.time {
+  font-weight: normal;
+  color: #BEBEBE;
+  width: 16px;
+  height: 18px;
+}
+
+.message {
+  width: 334px;
+  height: 117px;
+  border-top: 1px solid #DBDBDB;
+}
+
+.father {
+  padding: 15px 0 0 15px;
+  border-bottom: 1px solid #DBDBDB;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.date {
+  margin-top: 4px;
+  margin-bottom: 8px;
+  font-size: 10px;
+  color: #BEBEBE;
+}
+
+.message_input {
+  display: flex;
+  padding-right: 15px;
+  justify-content: space-between;
+}
+
+input.comment {
+  width: 100%;
+  margin: 10px;
+  border: none;
+  font-size: 14px;
+}
+
+input.comment:focus {
+  outline: none;
+}
+
+button.send {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  color: #0095F6;
 }
