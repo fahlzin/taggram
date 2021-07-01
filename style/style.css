@@ -1,24 +1,21 @@
 .body {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   font-family: Arial;
 }
 
 .header {
-  background-color: #FFF;
-  border-bottom: 1px solid #DBDBDB;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .header__container {
   display: flex;
-  width: 933px;
-  height: 54px;
+  max-width: 933px;
   margin: 0 auto;
 }
 
-.taggram {
-  margin: 15px 0;
-  width: 82px;
-  height: 29px;
+.logo {
+  margin-top: 15px;
 }
 
 .current-user {
@@ -30,122 +27,92 @@
 
 .current-user__username {
   color: #262626;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin: 17px 12px 19px 0;
-  font-weight: normal;
+  margin-right: 12px;
 }
 
 .current-user__avatar {
   height: 22px;
   width: 22px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.post {
+.contents_container {
+  display: flex;
+  width: 933px;
+  height: 598px;
+  border: 1px solid #dbdbdb;
+  margin: 20px auto 0 auto;
+}
+
+.post-image {
   width: 598px;
   height: 598px;
 }
 
-.post_container {
-  width: 933px;
+.post_comments {
+  width: 334px;
   height: 598px;
-  margin: 20px auto 104px auto;
-  background-color: white;
-  border: 1px solid #DBDBDB;
   display: flex;
+  flex-direction: column;
+  border-left: 1px solid #dbdbdb;
 }
 
-.container {
-  width: 335px;
-  height: 598px;
+.author {
+  display: flex;
+  width: 334px;
+  height: 73px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.author_contents {
+  margin-left: 16px;
   display: flex;
   flex-direction: column;
 }
 
-.author_container {
+.author_name {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 19px;
+}
+
+.author_location {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.comments_container {
   width: 334px;
-  height: 73px;
-  align-items: flex-start;
-  border-bottom: 1px solid #DBDBDB;
+  height: 524px;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .author_avatar {
   width: 32px;
   height: 32px;
-  margin: 20px 16px 21px 16px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  margin: 20px 0 0 16px;
+  background-size: contain;
 }
 
-.author_username {
-  height: 18px;
-  margin-top: 19px;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.author_location {
-  height: 15px;
-  padding-top: 39px;
-  margin-left: -34px;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.comments_container {
-  width: 335px;
-  height: 525px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.comments_container h3 {
-  font-weight: bold;
-  line-height: 18px;
-}
-
-.first_user_avatar {
-  margin-top: 16px;
-}
-
-.first_user_avatar, .second_user_avatar, .third_user_avatar, .fourth_user_avatar, .fifth_user_avatar {
-  width: 32px;
-  height: 32px;
-  margin-left: 17px;
-}
-
-#spacer {
-  width: 0px;
-  height: 40px;
-}
-
-.username_one, .username_two, .username_three, .username_four, .username_five {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 18px;
-  height: 14px;
-  margin-right: 4px;
-}
-
- .first_comment_container, .comment_container {
+.comment_container {
   width: 253px;
   height: auto;
-  margin-left: 18px;
   display: flex;
   flex-direction: column;
-}
-
-.first_comment_container {
-  margin-top: 16px;
-}
-
-.comment {
-  font-weight: normal;
+  margin-left: 18px;
+  padding-top: 16px;
 }
 
 .user_comment {
@@ -153,38 +120,47 @@
   justify-content: center;
 }
 
-.hour {
+.avatar img {
+  width: 32px;
+  height: 32px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  margin-left: 16px;
   margin-top: 16px;
 }
 
-.time {
-  font-weight: normal;
-  color: #BEBEBE;
-  width: 16px;
-  height: 18px;
+.username {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
 }
 
-.message {
-  width: 334px;
-  height: 117px;
-  border-top: 1px solid #DBDBDB;
+.hour {
+  font-size: 14px;
+  color: #8e8e8e;
 }
 
-.father {
-  padding: 15px 0 0 15px;
-  border-bottom: 1px solid #DBDBDB;
+.info {
+  display: flex;
+  flex-direction: column;
 }
 
 .quantity {
+  margin: 13px 0 2px 16px;
   font-weight: bold;
   font-size: 14px;
 }
 
 .date {
-  margin-top: 4px;
-  margin-bottom: 8px;
   font-size: 10px;
-  color: #BEBEBE;
+  line-height: 18px;
+  color: #8e8e8e;
+  margin-left: 16px;
+}
+
+.message {
+  height: 117px;
+  border-top: 1px solid #dbdbdb;
 }
 
 .message_input {
@@ -198,6 +174,7 @@ input.comment {
   margin: 10px;
   border: none;
   font-size: 14px;
+  background-color: transparent;
 }
 
 input.comment:focus {
@@ -208,5 +185,5 @@ button.send {
   background-color: transparent;
   border: none;
   font-weight: bold;
-  color: #0095F6;
+  color: #0095f6;
 }
